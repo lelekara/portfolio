@@ -222,10 +222,10 @@ const Projet3Page: React.FC = () => {
                 <Card className="pt-4">
                   <CardContent>
                     <img
-                      src="/img/Stage_Site01.png"
+                      src="../../../public/img/Stage_Site01.png"
                       alt="Interface du site web - Vue 1"
                       className="rounded-md w-full h-auto cursor-zoom-in"
-                      onClick={() => window.open("/img/Stage_Site01.png", "_blank")}
+                      onClick={() => window.open("../../../public/img/Stage_Site01.png", "_blank")}
                     />
                     <p className="text-center mt-2 text-sm text-gray-600 dark:text-gray-400">
                       Interface du site web - Vue 1
@@ -237,10 +237,10 @@ const Projet3Page: React.FC = () => {
                 <Card className="pt-4">
                   <CardContent>
                     <img
-                      src="/img/Stage_Site02.png"
+                      src="../../../public/img/Stage_Site02.png"
                       alt="Interface du site web - Vue 2"
                       className="rounded-md w-full h-auto cursor-zoom-in"
-                      onClick={() => window.open("/img/Stage_Site02.png", "_blank")}
+                      onClick={() => window.open("../../../public/img/Stage_Site02.png", "_blank")}
                     />
                     <p className="text-center mt-2 text-sm text-gray-600 dark:text-gray-400">
                       Interface du site web - Vue 2
@@ -257,8 +257,7 @@ const Projet3Page: React.FC = () => {
         <div className="text-center">
           <Link
             href="/"
-             className="inline-block bg-black hover:bg-gray-800 text-white font-bold py-2 px-4 rounded transition duration-300"
-          >
+             className="inline-block bg-black hover:bg-gray-800 text-white font-bold py-2 px-4 rounded transition duration-300">
             Retour à l'accueil
           </Link>
         </div>
