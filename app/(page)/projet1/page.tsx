@@ -97,7 +97,7 @@ const Projet1Page: React.FC = () => {
               <CarouselItem>
                 <Card className="pt-4">
                   <CardContent>
-                    <img src="/img/P1BreadBord.png" alt="Breadboard du projet" className="rounded-md w-full h-auto" />
+                    <img src="./img/P1BreadBord.png" alt="Breadboard du projet" className="rounded-md w-full h-auto" />
                     <p className="text-center mt-2 text-sm text-gray-600 dark:text-gray-400">Montage sur Breadboard</p>
                   </CardContent>
                 </Card>
