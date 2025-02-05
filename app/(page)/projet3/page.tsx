@@ -109,10 +109,10 @@ const Projet4Page: React.FC = () => {
                 <Card className="pt-4">
                 <CardContent>
                     <img
-                        src="../../../public/img/MobileApp01.png"
+                        src="/img/MobileApp01.png"
                         alt="Interface du site web - Vue 1"
                         className="rounded-md w-3xs h-auto mx-auto cursor-zoom-in"
-                        onClick={() => window.open("../../../public/img/MobileApp01.png", "_blank")}
+                        onClick={() => window.open("/img/MobileApp01.png", "_blank")}
                     />
                     <p className="text-center mt-2 text-sm text-gray-600 dark:text-gray-400">
                         Interface du site web - Vue 1
@@ -124,10 +124,10 @@ const Projet4Page: React.FC = () => {
                 <Card className="pt-4">
                   <CardContent>
                     <img
-                      src="../../../public/img/MobileApp02.png"
+                      src="/img/MobileApp02.png"
                       alt="Interface du site web - Vue 2"
                       className="rounded-md w-3xs h-auto mx-auto cursor-zoom-in"
-                      onClick={() => window.open("../../../public/img/MobileApp02.png", "_blank")}
+                      onClick={() => window.open("/img/MobileApp02.png", "_blank")}
                     />
                     <p className="text-center mt-2 text-sm text-gray-600 dark:text-gray-400">
                       Interface du site web - Vue 2

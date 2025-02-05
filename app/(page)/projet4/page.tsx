@@ -222,10 +222,10 @@ const Projet3Page: React.FC = () => {
                 <Card className="pt-4">
                   <CardContent>
                     <img
-                      src="../../../public/img/Stage_Site01.png"
+                      src="/img/Stage_Site01.png"
                       alt="Interface du site web - Vue 1"
                       className="rounded-md w-full h-auto cursor-zoom-in"
-                      onClick={() => window.open("../../../public/img/Stage_Site01.png", "_blank")}
+                      onClick={() => window.open("/img/Stage_Site01.png", "_blank")}
                     />
                     <p className="text-center mt-2 text-sm text-gray-600 dark:text-gray-400">
                       Interface du site web - Vue 1
@@ -237,10 +237,10 @@ const Projet3Page: React.FC = () => {
                 <Card className="pt-4">
                   <CardContent>
                     <img
-                      src="../../../public/img/Stage_Site02.png"
+                      src="/img/Stage_Site02.png"
                       alt="Interface du site web - Vue 2"
                       className="rounded-md w-full h-auto cursor-zoom-in"
-                      onClick={() => window.open("../../../public/img/Stage_Site02.png", "_blank")}
+                      onClick={() => window.open("/img/Stage_Site02.png", "_blank")}
                     />
                     <p className="text-center mt-2 text-sm text-gray-600 dark:text-gray-400">
                       Interface du site web - Vue 2
