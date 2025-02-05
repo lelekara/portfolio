@@ -1,101 +1,85 @@
-import Image from "next/image";
+import { Footer } from "@/components/Footer"
+import { ExperienceItem } from "@/components/ExperienceItem"
+import { SkillItem } from "@/components/SkillItem"
+import { ProjectItem } from "@/components/ProjectItem" 
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800 text-gray-800 dark:text-gray-200">
+      <main className="max-w-4xl mx-auto px-4 py-12 space-y-16">
+        <section className="space-y-4 text-center">
+          <h1 className="text-4xl font-bold text-gray-900 dark:text-gray-100">Karassavas Léandre</h1>
+          <p className="text-xl text-gray-700 dark:text-gray-300 max-w-2xl mx-auto">
+            Diplômé en informatique, orientation industrielle, passionné par les nouvelles technologies et l'innovation.
+          </p>
+        </section>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+        <section className="space-y-6">
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-100">À propos</h2>
+          <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+            Ayant grandi avec l'évolution du numérique, l'informatique s'est imposée comme une évidence pour moi.
+            Curieux et polyvalent, je m'intéresse aussi bien au développement logiciel (web & embarqué) qu'à
+            l'automobile, un autre domaine qui me fascine. Toujours en quête de nouveaux défis, j'aime apprendre et
+            explorer les innovations technologiques.
+          </p>
+        </section>
+
+        <section className="space-y-6">
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-100">Expériences</h2>
+          <div className="space-y-4">
+            <ExperienceItem
+              title="Stage de fin d'études"
+              company="Smart Gastronomy Lab"
+              date="2024 - 2025" description={""}            />
+            <ExperienceItem title="Job d'été" company="Cash Piscine" date="2024" description={""}/>
+            <ExperienceItem title="Job d'été" company="Cash Piscine" date="2023" description={""} />
+          </div>
+        </section>
+
+        <section className="space-y-6">
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-100">Compétences</h2>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+            <SkillItem skill="Automatisation" subSkills={["Programmation automates"]}/>
+            <SkillItem skill="Développement web" subSkills={["React","Next.js","JavaScript","TypeScript","Node.js"]} />
+            <SkillItem skill="Développement mobile" subSkills={["React Native"]} />
+            <SkillItem skill="Système embarqué" subSkills={["Arduino","ESP32"]}/>
+            <SkillItem skill="Sécurité des réseaux" subSkills={["Cryptographie","VPN"]}/>
+            <SkillItem skill="Base de données" subSkills={["SQL","NoSQL","Conception de schémas"]}/>
+          </div>
+        </section>
+
+        <section className="space-y-6">
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-100">Projets</h2>
+          <div className="space-y-6">
+            <ProjectItem
+              title="Système Connecté et Application Web"
+              date="2024 - 2025"
+              description="Projet confier durant mon stage de fin d'études"
+              link="projet4"
             />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
+              <ProjectItem
+              title="Développement d’un système d’arrosage automatique connecté"
+              date="2024"
+              description="Projet pluridisciplinaire de bachelier 3"
+              link="projet3"
+            />
+            <ProjectItem
+              title="Dispositif de mesure de profondeur connecté"
+              date="2023"
+              description="Projet pluridisciplinaire de bachelier 2"
+              link="projet2"
+            />
+            <ProjectItem
+              title="Set de dés connectés"
+              date="2022"
+              description="Projet pluridisciplinaire de bachelier 1"
+              link="projet1"
+            />
+          </div>
+        </section>
       </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      <Footer />
     </div>
-  );
+  )
 }
+
