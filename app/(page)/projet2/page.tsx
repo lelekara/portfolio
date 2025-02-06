@@ -107,10 +107,10 @@ const Projet2Page: React.FC = () => {
                 <Card className="pt-4">
                   <CardContent>
                     <img
-                      src="/img/P2BreadBoard.png"
+                      src="./img/P2BreadBoard.png"
                       alt="Montage sur breadboard"
                       className="rounded-md w-full h-auto cursor-zoom-in"
-                      onClick={() => window.open("/img/P2BreadBoard.png", "_blank")}
+                      onClick={() => window.open("./img/P2BreadBoard.png", "_blank")}
                     />
                     <p className="text-center mt-2 text-sm text-gray-600 dark:text-gray-400">Montage sur Breadboard</p>
                   </CardContent>
@@ -120,10 +120,10 @@ const Projet2Page: React.FC = () => {
                 <Card className="pt-4">
                   <CardContent>
                     <img
-                      src="/img/P2Site.png"
+                      src="./img/P2Site.png"
                       alt="Interface du site web"
                       className="rounded-md w-full h-auto cursor-zoom-in"
-                      onClick={() => window.open("/img/P2Site.png", "_blank")}
+                      onClick={() => window.open("./img/P2Site.png", "_blank")}
                     />
                     <p className="text-center mt-2 text-sm text-gray-600 dark:text-gray-400">Interface du Site Web</p>
                   </CardContent>
