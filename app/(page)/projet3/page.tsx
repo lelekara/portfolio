@@ -23,7 +23,7 @@ const Projet4Page: React.FC = () => {
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>
-              <BreadcrumbLink href="/">Accueil</BreadcrumbLink>
+              <BreadcrumbLink href="/portfolio">Accueil</BreadcrumbLink>
             </BreadcrumbItem>
             <BreadcrumbSeparator />
             <BreadcrumbItem>
