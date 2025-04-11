@@ -54,7 +54,7 @@ export default function Home() {
             <ProjectItem
               title="Système Connecté et Application Web"
               date="2024 - 2025"
-              description="Projet confier durant mon stage de fin d'études"
+              description="Projet confié durant mon stage de fin d'études"
               link="projet4"
             />
               <ProjectItem
