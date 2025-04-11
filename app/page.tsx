@@ -64,6 +64,12 @@ export default function Home() {
               link="projet3"
             />
             <ProjectItem
+              title="Projet Industriel — Monitoring industriel à distance via eWON & site web"
+              date="2023 - 2024"
+              description="Projet confier pour un examen de bachelier 3 réalisé en équipe à technocampus" 
+              link="projetIndu"
+            />
+            <ProjectItem
               title="Dispositif de mesure de profondeur connecté"
               date="2023"
               description="Projet pluridisciplinaire de bachelier 2"
