@@ -51,6 +51,13 @@ export default function Home() {
         <section className="space-y-6">
           <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-100">Projets</h2>
           <div className="space-y-6">
+              <ProjectItem
+              title="Application de Gestion du Temps de Travail"
+              date="2025"
+              description=" Création d’une application web permettant de gérer ses horaires de
+            travail et ses pauses via un calendrier interactif."
+              link="projetPerso1"
+            />
             <ProjectItem
               title="Système Connecté et Application Web"
               date="2024 - 2025"
